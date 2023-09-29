@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Sistema Acadêmico</title>
+  
+</head>
+<body>
+	<form action="../ServletAluno" method="get">
+	
+
+		<table border="1">
+		
+			<input type="hidden" name="cmd" value="incluir">
+			<tr><th colspan="2"><h1 style="font-family:Verdana">Cadastro de Alunos</h1></th></tr>
+			<tr>
+				<td style="font-family:Verdana">RA:</td>
+				<td><input type="text" name="txtRa" size="60" /></td>
+			</tr>
+			<tr>
+				<td style="font-family:Verdana">Nome:</td>
+				<td><input type="text" name="txtNome" size="60" /></td>
+			</tr>
+			<tr>
+				<td style="font-family:Verdana">E-mail:</td>
+				<td><input type="email" size="70" name="txtEmail" /></td>
+			</tr>
+			<tr>
+				<td style="font-family:Verdana">Endereço:</td>
+				<td><input type="text" size="60" name="txtEndereco" /></td>
+			</tr>
+			<tr>
+				<td style="font-family:Verdana">Data de Nascimento:</td>
+				<td><input type="date" size="60" name="txtData" /></td>
+			</tr>
+			<tr>
+				<td style="font-family:Verdana">Período</td>
+				<td><select size="1" name="cmbPeriodo">
+						<option style="font-family:Verdana">Manhã</option>
+						<option style="font-family:Verdana">Tarde</option>
+						<option style="font-family:Verdana">Noite</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="submit" value="Enviar"></td>
+			</tr>	
+			
+		</table>
+	</form>
+</body>
+</html>
